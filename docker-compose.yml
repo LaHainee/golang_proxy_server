@@ -1,0 +1,14 @@
+version: "3.8"
+
+volumes:
+  postgres_data:
+
+services:
+  main:
+    build:
+      context: .
+      dockerfile: ./cmd/Dockerfile
+    volumes:
+      - ./config:/app/config
+    ports:
+      - "1080:1080"

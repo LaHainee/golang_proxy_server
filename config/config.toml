@@ -1,0 +1,4 @@
+logging_level = "debug"
+
+[server]
+port = ":1080"
